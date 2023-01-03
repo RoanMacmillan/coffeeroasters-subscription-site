@@ -1,40 +1,29 @@
-const hamburgerBtn = document.querySelectorAll('.hamburger');
-const navMenu = document.getElementById('mobile-menu');
 const modal = document.querySelector('.modal');
 
-const openBtn = document.getElementById('open');
-const closeBtn = document.getElementById('close');
 
-const navBar = document.getElementById('mobile-nav-menu');
+function toggleMobileMenu() {
+
+    document.getElementById('mobile-menu').classList.toggle('transition');
+    document.getElementById('open').classList.toggle('close');
+    document.getElementById('close').classList.toggle('open');
+    modal.classList.toggle('modal-transition');
+
+    // Prevents scrolling when mobile menu is open //
+    document.body.classList.toggle('disable');
+}
 
 
-hamburgerBtn.forEach((btn) => {
+// Opens and closes mobile menu //
+document.querySelectorAll('.hamburger').forEach((btn) => {
 
     btn.addEventListener('click', () => {
 
-        navMenu.classList.toggle('transition');
-        openBtn.classList.toggle('close');
-        closeBtn.classList.toggle('open');
-        modal.classList.toggle('modal-transition');
-
-
-        // modal.classList.toggle('open');
-        
+        toggleMobileMenu();      
+})
 })
 
-
-})
-
-
-
-
+// Close mobile menu when clicking outside //
 modal.addEventListener('click', () => {
 
-    // modal.classList.remove('modal-transition');
-
-        navMenu.classList.toggle('transition');
-        openBtn.classList.toggle('close');
-        closeBtn.classList.toggle('open');
-        modal.classList.toggle('modal-transition');
-
+    toggleMobileMenu();
 })

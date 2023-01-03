@@ -45,7 +45,14 @@ body {
 
     margin: 0;
     background-color: #F2F1F0;
+    
 
+}
+
+.disable {
+
+    height: 100%;
+    overflow: hidden;
 }
 
 main {
@@ -388,7 +395,7 @@ color: #83888F;
     margin: 0 auto;
     padding: 75px 0px 75px 0px;
     background:#F2F1F0;
-    /* background: linear-gradient(0deg, rgba(242,241,240,0) 0%, rgba(242,241,240,1) 43%); */
+    /* background: linear-gradient(0deg, rgba(242,241,240,0) 0%, rgba(242,241,240,1) 50%); */
     z-index: 2;
     top: 50px;
     transform: translateY(-100%);

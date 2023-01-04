@@ -11,6 +11,11 @@ h4 {
 
 }
 
+a {
+
+    text-decoration: none;
+}
+
 h1 {
 
     color: #fefcf7;
@@ -356,6 +361,7 @@ color: #83888F;
 
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .icon-container img:hover {
@@ -409,6 +415,14 @@ color: #83888F;
     font-size: 24px;
     font-weight: 900;
     font-family: 'Fraunces', serif;
+    cursor: pointer;
+}
+
+#mobile-menu a:hover {
+
+    color:#333d4b9a;
+
+
 }
 
 .links-container {

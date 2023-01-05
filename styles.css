@@ -49,7 +49,7 @@ p {
 body {
 
     margin: 0;
-    background-color: #F2F1F0;
+    background-color: #fdfcf9;
     
 
 }
@@ -400,7 +400,7 @@ color: #83888F;
     left: 0;
     margin: 0 auto;
     padding: 75px 0px 75px 0px;
-    background:#F2F1F0;
+    background-color: #fdfcf9;
     /* background: linear-gradient(0deg, rgba(242,241,240,0) 0%, rgba(242,241,240,1) 50%); */
     z-index: 2;
     top: 50px;
@@ -466,7 +466,7 @@ nav {
     padding-top: 32px;
     padding-bottom: 40px;
     width: 100%;
-    background:#F2F1F0;
+    background-color: #fdfcf9;
     z-index: 3;
 
     
@@ -591,3 +591,229 @@ color: #333D4B;
     flex-direction: column;
     gap: 80px;
 }
+
+/* Plan section */
+
+
+#plan-box {
+
+    background-image: url('./starter-code/assets/plan/mobile/image-hero-blackcup.jpg');
+    height: 400px;
+}
+
+#plan-box p {
+
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+text-align: center;
+
+color: #FEFCF7;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+
+.guide-container {
+
+height: 1028px;
+margin-top: 120px;
+padding-right: 24px;
+padding-left: 24px;
+border-radius: 10px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/* background-color: #2C343E; */
+background-image: url('./starter-code/assets/plan/mobile/bg-steps.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.guide-container h2 {
+
+    color: #FDD6BA;
+    font-weight: 900;
+font-size: 72px;
+line-height: 72px;
+margin-bottom: 24px;
+margin-top: 56px;
+
+}
+
+.guide-container h3 {
+
+    font-weight: 900;
+font-size: 28px;
+line-height: 32px;
+margin-bottom: 24px;
+text-align: center;
+margin-top: 0;
+color: #FFFFFF;
+}
+
+.guide-container p {
+
+    font-family: 'Barlow';
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+
+margin-bottom: 0px;
+color: #FFFFFF;
+}
+
+
+
+/* Accordion */
+
+
+.accordion {
+
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.accordion-heading {
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* margin-top: 35px; */
+
+
+}
+
+.accordion-heading h3 {
+
+    font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+/* or 117% */
+
+color: #83888F;
+text-align: left;
+transition: all .4s;
+
+}
+
+
+.accordion-body-card {
+   background: #F4F1EB;
+border-radius: 8px;
+text-align: left;
+height: 140px;
+display: flex;
+flex-direction: column;
+
+/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+
+
+.accordion-body-card h4 {
+    margin-bottom: 8px;
+    font-weight: 900;
+    margin-top: 24px;
+font-size: 24px;
+line-height: 32px;
+color: #333D4B;
+padding-left: 25px;
+    padding-right: 25px;
+}
+
+.accordion-body-card p {
+
+    margin-top: 0;
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #333D4B;
+padding-left: 25px;
+    padding-right: 25px;
+}
+
+.accordion-dropdown-button {
+
+    transition: all .4s;
+    filter: brightness(150%);
+
+}
+
+
+
+.active-heading .accordion-dropdown-button {
+
+    transform: rotate(-180deg);
+    filter: brightness(100%);
+
+
+}
+
+.active-heading .accordion-question {
+
+    color: #333D4B;
+}
+
+.accordion-body-container {
+
+    max-height: 0px;
+    transition: max-height .4s ease-in-out;
+  overflow: hidden;
+}
+
+
+.accordion-body-open {
+    max-height: 500px; /* or whatever value you want */
+  }
+
+
+
+  .summary-container {
+
+    height: 338px;
+    background: #2C343E;
+    border-radius: 10px;
+    padding-left: 24px;
+    padding-right: 25px;
+
+  }
+
+
+  .summary-container p {
+    margin-top: 0;
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 40px;
+text-align: left;
+
+color: #FFFFFF;
+  }
+
+
+  h5 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: 'Barlow';
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.5;
+  }
+
+  #plan-button {
+
+    margin: 0 auto;
+    margin-top: 56px;
+  }

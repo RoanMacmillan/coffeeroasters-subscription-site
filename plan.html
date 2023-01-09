@@ -98,9 +98,9 @@
         <h3 class="accordion-question">How do you drink<br>your coffee?</h3>
         <img class="accordion-dropdown-button" src="./starter-code/assets/plan/desktop/icon-arrow.svg">
       </div>
-      <div class="accordion-body-container">
+      <div class="accordion-body-container" data-target=".coffeeMethod">
         <div id="capsuleChoice" class="accordion-body-card howCard">
-          <h4  class="method">Capsule</h4>
+          <h4 class="method">Capsule</h4>
           <p>Compatible with Nespresso systems and similar brewers</p>
         </div>
         <br>
@@ -120,7 +120,7 @@
         <h3 class="accordion-question">What type of<br>coffee?</h3>
         <img class="accordion-dropdown-button" src="./starter-code/assets/plan/desktop/icon-arrow.svg">
       </div>
-      <div class="accordion-body-container">
+      <div class="accordion-body-container" data-target=".beanType">
         <div class="accordion-body-card typeCard">
           <h4 class="type">Single origin</h4>
           <p>Distinct, high quality coffee from a specific family-owned farm</p>
@@ -141,7 +141,7 @@
         <h3 class="accordion-question">How much would<br>you like?</h3>
         <img class="accordion-dropdown-button" src="./starter-code/assets/plan/desktop/icon-arrow.svg">
       </div>
-      <div class="accordion-body-container">
+      <div class="accordion-body-container" data-target=".coffeeAmount">
         <div class="accordion-body-card">
           <h4>250g</h4>
           <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
@@ -162,29 +162,29 @@
         <h3 class="accordion-question">Want us to grind<br>them?</h3>
         <img class="accordion-dropdown-button" src="./starter-code/assets/plan/desktop/icon-arrow.svg">
       </div>
-      <div class="accordion-body-container groundBody">
-        <div class="accordion-body-card bonk">
+      <div class="accordion-body-container groundBody" data-target=".groundType">
+        <div class="accordion-body-card groundCard">
           <h4>Wholebean</h4>
           <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
         </div>
         <br>
-        <div class="accordion-body-card bonk">
+        <div class="accordion-body-card groundCard">
           <h4>Filter</h4>
           <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
         </div>
         <br>
-        <div class="accordion-body-card bonk">
+        <div class="accordion-body-card groundCard">
           <h4>Cafetiere</h4>
           <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
         </div>
       </div>
 
 
-      <div  class="accordion-heading">
+      <div class="accordion-heading">
         <h3 class="accordion-question">How often should<br>we deliver?</h3>
         <img class="accordion-dropdown-button" src="./starter-code/assets/plan/desktop/icon-arrow.svg">
       </div>
-      <div class="accordion-body-container">
+      <div class="accordion-body-container" data-target=".frequency">
         <div class="accordion-body-card">
           <h4>Every Week</h4>
           <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
@@ -213,9 +213,11 @@
       <h5>Order Summary</h5>
 
 
-      <p id="instructions">Customize your <span>plan</span> with our range of options then come back to review your choices!</p>
+      <p id="instructions">Customize your <span>plan</span> with our range of options then come back to review your
+        choices!</p>
 
-      <p id="yourPlan">“I drink my coffee as <span class="coffeeMethod">....</span>, with a <span class="beanType">....</span> type of
+      <p id="yourPlan">“I drink my coffee as <span class="coffeeMethod">....</span>, with a <span
+          class="beanType">....</span> type of
         bean. <span class="coffeeAmount">...</span> ground ala <span class="groundType">...</span>,
         sent to me <span class='frequency'>...</span>.”</p>
 
@@ -264,9 +266,38 @@
       </div>
 
     </div>
+
+    <div class="order-summary">
+
+      <div class="os-container">
+
+        <div class="os-heading">
+
+          <h2>Order Summary</h2>
+          <img class="close-summary" src="./starter-code/assets/shared/mobile/icon-close.svg">
+        </div>
+        <p class="end-content">
+          
+          <!-- “I drink my coffee as <span class="coffeeMethod">....</span>, with a <span
+          class="beanType">....</span> type of
+        bean. <span class="coffeeAmount">...</span> ground ala <span class="groundType">...</span>,
+        sent to me <span class='frequency'>...</span>.” -->
+      
+      </p>
+        <p class="confirmation">Is this correct? You can proceed to checkout or go back to plan selection if something
+          is off. Subscription discount codes can also be redeemed at the checkout. </p>
+          <div class="btns-container">
+        <button>Checkout</button>
+        </div>
+      </div>
+
+    </div>
+
+
     <modal class="modal"></modal>
 
   </main>
+  <script src="./plan.js"></script>
   <script src="./main.js"></script>
 </body>
 

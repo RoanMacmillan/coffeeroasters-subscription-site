@@ -43,7 +43,7 @@ if (modal) {
 
 // Close mobile menu when resizing to a minimum width of 700px
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 700 && menuOpen) {
+    if (window.innerWidth >= 767 && menuOpen) {
         menuOpen = false;
         toggleMenuAndBodyScroll(false);
     }

@@ -26,6 +26,11 @@
         });
     });
 
+
+
+
+
+
     // Card selection
     const accordionContainers = document.querySelectorAll('.accordion-body-container');
     accordionContainers.forEach(container => {
@@ -101,3 +106,50 @@ const capsuleChoice = document.getElementById('capsuleChoice');
 
 
 
+// Desktop navigation menu
+const desktopNavMenu = document.querySelector('.desktop-nav-menu');
+const navMenuItems = desktopNavMenu.querySelectorAll('p');
+
+navMenuItems.forEach(item => {
+    item.addEventListener('click', function () {
+        this.classList.toggle('active-heading');
+
+        const index = this.dataset.target;
+        const accordionHeading = accordionHeadings[index];
+        // Scrolls to top of corresponding section when choice is clicked on the menu
+        window.scrollTo({
+            top: accordionHeading.offsetTop,
+            behavior: 'smooth'
+
+
+        });
+
+        // remove active class from all elements
+        navMenuItems.forEach(navItem => navItem.classList.remove('activeDesktopMenu'));
+        // add active class to the clicked element
+        this.classList.add('activeDesktopMenu');
+    });
+});
+
+
+// Get the first accordion heading element
+const firstAccordionHeading = document.querySelector('.guide-container')
+
+// Get the desktop nav menu element
+
+function toggleFixedNav() {
+  // Get the position of the first accordion heading
+  const firstAccordionHeadingPosition = firstAccordionHeading.getBoundingClientRect().bottom;
+
+  // Check if the user has scrolled past the first accordion heading
+  if (firstAccordionHeadingPosition <= 0) {
+    // If so, add the 'fixed' class
+    desktopNavMenu.classList.add('fixed');
+  } else {
+    // If not, remove the 'fixed' class
+    desktopNavMenu.classList.remove('fixed');
+  }
+}
+
+// Call the function on the window's scroll event
+window.onscroll = toggleFixedNav;

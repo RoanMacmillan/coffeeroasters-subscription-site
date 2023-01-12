@@ -311,6 +311,11 @@ button:hover {
     margin-bottom: 79px;
 }
 
+#desktop-quality{
+
+    display: none;
+}
+
 #footer-container {
 
     border-radius: 0;
@@ -521,6 +526,10 @@ nav {
 #about-quality-box {
 
     background-image: none;
+}
+.plan-link a {
+
+    color: #FEFCF7;
 }
 
 
@@ -1101,6 +1110,7 @@ h5 {
 
         margin-right: 0;
         margin-left: 0;
+
     }
 
     .coffee-child {
@@ -1109,6 +1119,7 @@ h5 {
         gap: 110px;
         margin-right: 0px;
         justify-content: center;
+
 
     }
 
@@ -1435,9 +1446,10 @@ h5 {
         margin: 0 auto;
         height: 208px;
         padding: 0;
+        
     }
 
-    #instruction,
+    #instructions,
     #yourPlan,
     h5 {
 
@@ -1447,7 +1459,38 @@ h5 {
 }
 
 
+@media screen and (min-width: 1015px) {
 
+
+    #footer-container {
+
+    }
+
+    #footer-container {
+
+        flex-direction: row;
+        height: 120px;
+        margin-bottom: 88px;
+        justify-content: flex-start;
+        padding-left: 85px;
+        padding-right: 85px;
+        margin-top: 320px;
+        padding-bottom: 0;
+
+    }
+
+    .icon-container {
+
+        margin-left: auto;
+    }
+
+    #footer-container .links-container {
+
+        margin-left: 102.9px;
+        gap: 32px;
+    }
+
+}
 
 @media screen and (min-width: 1190px) {
 
@@ -1463,6 +1506,8 @@ h5 {
         margin-right: auto;
         align-items: flex-start;
         gap: 30px;
+        
+
     }
 
     .coffee-container h2 {
@@ -1500,6 +1545,7 @@ h5 {
         height: 193px;
         position: unset;
         margin-top: 180px;
+        justify-content: unset;
 
     }
 
@@ -1530,6 +1576,62 @@ h5 {
         line-height: 26px;
         margin-top: 0;
     }
+
+    .card-container {
+
+        margin-top: 200px;
+        height: 577px;
+        padding-bottom: 80px;
+
+    }
+
+    
+
+    .card:first-of-type {
+
+        margin-top: 50px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .card {
+
+        width: 350px;
+        height: 382px;
+        margin: 0;
+        flex-direction: column;
+        margin-top: 50px;
+        
+    }
+
+    .card-child {
+
+        text-align: center;
+        width: 255px;
+        height: 134px;
+        margin: 0 auto;
+        
+    }
+
+    .card-child p {
+
+        text-align: center;
+        width: 255px;
+        padding-right: 0 !important;
+
+    }
+
+    #lastChild {
+
+        margin-top: 22px;
+
+    }
+
+    
 }
 
 /* Desktop */
@@ -1591,6 +1693,7 @@ h5 {
 
         margin-top: 200px;
         height: 577px;
+        padding-bottom: 0;
 
     }
 
@@ -1727,6 +1830,7 @@ h5 {
         padding-left: 85px;
         padding-right: 85px;
         margin-top: 320px;
+        
     }
 
     .icon-container {
@@ -1739,7 +1843,238 @@ h5 {
         margin-left: 102.9px;
         gap: 32px;
     }
+
+
+    /* About us desktop */
+
+
+    #about-box {
+
+        background-image: url('./starter-code/assets/about/desktop/image-hero-whitecup.jpg');
+        background-size: cover;
+        height: 450px;
+    }
     
+    #about-box h1 {
+
+        font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+    }
+
+    #pouring-coffee {
+
+        width: 445px;
+        height: 520px;
+        background-image: url('./starter-code/assets/about/desktop/image-commitment.jpg');
+        background-size:cover !important;
+        background-position-y: 20%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .about-content h2 {
+
+        font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+text-transform: capitalize !important;
+width: 357px;
+    }
+
+    .about-content p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    .about-content {
+
+        width: 540px;
+        
+
+    }
+
+    .quality-container {
+
+        margin-right: auto;
+        margin-bottom: 88px;
+    }
+
+    .commitment-container {
+
+        gap: 0;
+        padding-left: 85px !important;
+        padding-right: 85px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #about-quality-box {
+
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 85px;
+        padding-right: 85px;
+        position: relative;
+        height: 474px;
+    }
+
+    #tablet-quality {
+
+        display: none;
+    }
+
+    #desktop-quality {
+        position: absolute;
+        margin-bottom: 0 !important;
+        height: 445px;
+        width: 474px;
+        display: block;
+        top: -88px;
+    }
+
+    #about-quality-box h2 {
+
+        text-align: left;
+        font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height, or 120% */
+
+
+color: #FEFCF7;
+    }
+
+    #about-quality-box p {
+        font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+padding-right: 0;
+padding-left: 0;
+color: #FEFCF7;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+        margin-bottom: 0 !important;
+        text-align: left;
+        width: 540px;
+    }
+
+
+    .headquarters-container {
+
+        width: 1045px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .headquarters-container h2 {
+
+        text-align: left !important;
+        margin-top: 168px;
+        
+    }
+
+    .locations-wrapper {
+
+        justify-content: space-between;
+    }
+
+
+    /* Desktop Plan page */
+
+    #plan-box {
+
+        background-image: url('./starter-code/assets/plan/desktop/image-hero-blackcup.jpg');
+        height: 450px;
+    }
+
+    .guide-child h3 {
+
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;    
+    }
+
+    .guide-child p {
+
+        font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+width: 285px;
+    }
+
+    .pcircle {
+
+        background: none;
+    }
+
+    .pbar {
+
+        width: 145%;
+        
+    }
+
+    .guide-child:first-child {
+
+        margin-left: 85px;
+    }
+
+    .guide-child {
+
+        margin-left: 0;
+        margin-right: 95px;
+        width: 285px;
+        
+    }
+
+    .guide-container {
+
+        padding: 0;
+    }
+
+    .accordion {
+
+        min-width: 730px !important;
+        margin-right: 85px !important;
+        margin-bottom: 0px;
+    }
+
+    .accordion-heading h3 {
+
+        font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+    }
+
+    .accordion-question {
+
+        margin-top: 16px;
+    }
+
+    .accordion-body-container {
+
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .summary-container {
+
+        margin-right: 85px;
+        min-width: 730px;
+    }
+
+    #plan-button {
+
+        margin-right: 85px;
+    }
 }
 
 

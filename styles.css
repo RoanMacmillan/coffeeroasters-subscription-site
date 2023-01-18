@@ -1736,8 +1736,9 @@ font-size: 18px;
         opacity: 0.5;
         font-size: 11.6rem;
         z-index: -1;
-        top: 45px;
+        top: 25px;
         left: -10px;
+        
 
     }
 
@@ -1746,9 +1747,9 @@ font-size: 18px;
         position: absolute;
         width: 100%;
         height: 196px;
-        background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) -90%, #FEFCF7 90%);
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) -90%, #FEFCF7 100%);
         top: 50px;
-
+        
     }
 
     .coffee-child {

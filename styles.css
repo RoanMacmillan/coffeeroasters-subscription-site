@@ -1760,18 +1760,17 @@ font-size: 18px;
         margin: 0;
         gap: 0px;
         width: 255px;
-        height: 193px;
         position: unset;
         margin-top: 180px;
         justify-content: unset;
-        
         height: 100%;
+        
     }
 
     .coffee-child img {
 
         margin-left:10px;
-        width: 256px;
+        width: 255px;
         height: 193px;
         
         

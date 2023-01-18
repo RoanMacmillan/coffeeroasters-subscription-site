@@ -84,6 +84,7 @@ button {
 }
 
 
+
 .hamburger {
 
     cursor: pointer;
@@ -655,10 +656,10 @@ nav {
     padding-left: 24px;
     border-radius: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    /* background-color: #2C343E; */
-    background-image: url('./starter-code/assets/plan/mobile/bg-steps.png');
+    background-color: #2C343E;
+    /* background-image: url('./starter-code/assets/plan/mobile/bg-steps.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .guide-container h2 {
@@ -815,6 +816,17 @@ nav {
     background-color: #0E8784 !important;
 }
 
+.active-text {
+
+    color: #0e878580 !important;
+}
+
+.menu-span {
+
+    margin-left: 0 !important;
+}
+
+
 .active-choice h4,
 .active-choice p {
 
@@ -891,7 +903,7 @@ h5 {
 .activeBtn {
 
     filter: opacity(100%) !important;
-    cursor: auto;
+    cursor: pointer !important;
 }
 
 
@@ -904,6 +916,7 @@ h5 {
     filter: opacity(50%) !important;
 
 }
+
 
 
 /* Checkout modal */
@@ -927,7 +940,18 @@ h5 {
 
 }
 
+.total-cost {
 
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+    
+    
+    color: #333D4B;
+    }
 
 .testtt {
     opacity: 1;
@@ -942,7 +966,7 @@ h5 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    
     border-radius: 8px;
 }
 
@@ -955,6 +979,7 @@ h5 {
     align-items: center;
     position: relative;
     justify-content: space-between;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .os-heading h2 {
@@ -998,6 +1023,20 @@ h5 {
     color: #83888F;
 }
 
+.end-content #cChange,
+.end-content #comma,
+.end-content #removeGround {
+
+    color: #83888F;
+    font-size: 18px;
+
+}
+
+#comma, #removeGround {
+
+    color: white;
+}
+
 .os-container button {
 
 
@@ -1011,26 +1050,26 @@ h5 {
     margin-right: 25px;
     filter: brightness(0) invert(.5);
     z-index: 5;
+    cursor: pointer;
+    transition: all .2s;
 }
 
-.btns-container {
-    margin-top: auto;
-    margin-bottom: 24px;
+.close-summary:hover {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 24px;
-    padding-right: 24px;
-
+    filter: brightness(0) invert(1);
 }
+
+
 
 #tablet-quality {
 
     display: none;
 }
 
+#cChange {
 
+    color: white;
+}
 
 #qwerty {
 
@@ -1038,9 +1077,150 @@ h5 {
 }
 
 
+.btns-container {
+
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: auto;
+    margin-bottom: 24px;
+    
+}
+
+.os-container {
+
+    display: flex;
+    height: 600px;
+    /* overflow: scroll; */
+}
+
+.end-content {
+
+    font-size: 18px;
+}
+
+.confirmation {
+
+    margin-top: 0;
+}
+
+.os-heading h2 {
+
+    font-size: 24px;
+}
+
+.total-cost {
+font-size: 18px;
+}
+
+@media screen and (min-width: 633px) {
+
+
+    .end-content {
+
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        /* or 167% */
+        margin-top: 57px;
+        margin-bottom: 0;
+        color: #83888F;    }
+    
+    .confirmation {
+    
+        margin-top: 7px;
+        
+    }
+
+    .end-content #cChange,
+.end-content #comma,
+.end-content #removeGround {
+
+    font-size: 24px;
+
+}
+    
+    .os-heading h2 {
+    
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+    
+    }
+    
+    .total-cost {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        /* identical to box height, or 112% */
+        
+        
+        color: #333D4B;    }
+
+    .btns-container {
+        margin-top: auto;
+        margin-bottom: 24px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    
+    }
+
+    .os-container {
+
+        width: 597px;
+        height: 540px;
+        
+        
+        }
+        
+        .os-heading {
+        
+            padding-left: 56px;
+        }
+        
+        .close-summary {
+        
+            padding-right: 56px;
+            margin: 0;
+        }
+        
+        .end-content, .confirmation {
+        
+            padding-left: 56px;
+            padding-right: 56px;
+            width: 428px;
+            
+        }
+        
+        .confirmation {
+        
+            font-size: 16px;
+        }
+        
+        .btns-container {
+        
+            padding-left: 56px;
+            padding-right: 56px;
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+        
+        .btns-container button {
+        
+            width: 217px;
+        }
+}
+
 @media screen and (min-width: 767px) {
 
-    /* Starting with home page */
+    
+    
 
     #qwerty {
 
@@ -1226,7 +1406,22 @@ h5 {
         border-bottom: 2px solid #FDD6BA;
         height: 15px;
         width: 110%;
+        z-index: -1;
     }
+
+   .pcircle {
+
+    background: none !important;
+    
+   }
+
+   .pbar {
+
+
+    border: none;
+}
+
+   
 
     .lastt {
 
@@ -1234,16 +1429,16 @@ h5 {
     }
 
     .circle {
-
-        background: #FEFCF7;
+        
+        background: white;
         outline: 2px solid #0E8784;
         border-radius: 50%;
         height: 31px;
         width: 31px;
+        z-index: 2;
 
     }
 
-    .steps-container {}
 
     .steps-container button {
 
@@ -1471,13 +1666,21 @@ h5 {
         margin-left: 44px;
         margin-right: 43px;
     }
+
+
+    
 }
 
 
 @media screen and (min-width: 1015px) {
 
 
-    #footer-container {}
+
+    .os-container {
+
+        z-index: 100;
+    }
+
 
     #footer-container {
 
@@ -2032,6 +2235,7 @@ h5 {
     .pbar {
 
         width: 145%;
+        border-bottom: 2px solid #FDD6BA;
 
     }
 
@@ -2071,6 +2275,12 @@ h5 {
     .accordion-question {
 
         margin-top: 16px;
+        
+    }
+
+    .accordion-heading {
+
+        margin-bottom: 25px;
     }
 
     .accordion-body-container {
@@ -2116,7 +2326,7 @@ h5 {
         display: flex;
         overflow: hidden;
         /* position: relative; */
-        z-index: 5;
+        z-index: 4;
         
     }
 
@@ -2152,10 +2362,16 @@ h5 {
         margin: 0;
         padding-bottom: 24px;
         padding-top: 24px;
+        transition: all 0.3s;
     }
+
+    
 
     .desktop-nav-menu p:last-child {
 
         border: none;
     }
+
+    
+
 }
